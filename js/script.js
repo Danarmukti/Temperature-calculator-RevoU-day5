@@ -25,10 +25,21 @@ for (let i = 0; i < option.length; i++) {
     this.className += " option-active";
   });
 }
+// dark-mode - lightmode active button
+var darkmode = document.getElementsByClassName("dark-mode");
+for (let i = 0; i < darkmode.length; i++) {
+  darkmode[i].addEventListener("click", function () {
+    var nowOption = document.getElementsByClassName(" active");
+    if (nowOption.length > 0) {
+      nowOption[0].className = nowOption[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  });
+}
 // darkmode
 var r = document.querySelector(":root");
 var t = document.querySelector("textarea");
-function darkmode() {
+function darkMode() {
   r.style.setProperty("--text-color", "white");
   r.style.setProperty("--bg-container", "#1c1d1f");
   r.style.setProperty("--bg-body", "#0f0f0f");

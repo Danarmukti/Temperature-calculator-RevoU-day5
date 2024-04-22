@@ -13,8 +13,10 @@
   <body class="body">
     <main>
       <section class="content container">
-        <button onclick="darkmode()" class="dark-mode">Dark Mode</button>
-        <button onclick="lightmode()" class="dark-mode">Light Mode</button>
+        <button onclick="darkMode()" class="dark-mode">Dark Mode</button>
+        <button onclick="lightmode()" class="dark-mode active">
+          Light Mode
+        </button>
         <header class="navbar">
           <h1 class="logo"><span>Danar</span> Mukti Wibowo</h1>
           <span class="title-project">RevoU Mini Coding Project</span>
@@ -69,11 +71,13 @@
             <span id="input-name"></span> <br />
             <textarea
               name="celsius"
-              id="temperature1"
               cols="30"
               rows="10"
               class="textarea"
+              type="number"
+              id="temperature1"
             ></textarea>
+
             <button class="btn konversi-btn" onclick="calculate()">
               Konversi
             </button>
