@@ -118,7 +118,7 @@ button:active {
 .option-section {
   background: var(--bg-container);
   cursor: pointer;
-  justify-content: space-between;
+  justify-content: start;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -181,7 +181,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 900px) {
   .option-section {
     justify-content: start;
   }
@@ -200,7 +200,21 @@ a {
     padding: 1rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 520px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .container {
+    padding: 2rem 1rem;
+  }
+  .title-project {
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
   .navbar {
     padding: 1rem;
   }
