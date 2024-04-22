@@ -228,3 +228,17 @@ a {
     font-size: 1rem;
   }
 }
+@media (max-width: 400px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .container {
+    padding: 2rem 1rem;
+  }
+  .title-project {
+    font-size: 0.7rem;
+  }
+  .logo {
+    font-size: 0.9rem;
+  }
+}
