@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.body {
+  background: var(--bg-body);
+}
+:root {
+  --bg-body: #f7f4f4;
+  --bg-container: #ffffff;
+  --second-color: #008bcc;
+  --text-color: #1b1b1b;
+  --box-shadow: rgba(21, 166, 233, 0.2);
+}
+.dark-mode {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+::selection {
+  background: var(--second-color);
+  color: var(--bg-container);
+}
+
+.container {
+  padding: 2rem 10rem;
+}
+/* header */
+.navbar {
+  padding: 1rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+  background: var(--bg-container);
+  border-radius: 15px;
+  box-shadow: 12px 12px 20px 0px var(--box-shadow);
+}
+.logo {
+  background: var(--bg-container);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.logo span {
+  background: var(--bg-container);
+  color: var(--second-color);
+}
+.title-project {
+  background: var(--bg-container);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+/* header */
+
+/* main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--bg-container);
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 12px 12px 20px 0px var(--box-shadow);
+}
+.guide-text {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: var(--bg-container);
+}
+.input-temperature {
+  background: var(--bg-container);
+}
+.input-temperature span {
+  color: var(--second-color);
+  background: var(--bg-container);
+}
+textarea {
+  border: 1px solid var(--second-color);
+  outline-color: var(--second-color);
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  background: var(--bg-container);
+  resize: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+button {
+  background: var(--bg-container);
+  border: none;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 50rem;
+  cursor: pointer;
+}
+.konversi-btn {
+  background: var(--second-color);
+  color: var(--bg-container);
+  border: 2px solid var(--second-color);
+}
+.reverse-btn,
+.reset-btn {
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+}
+button:active {
+  background: var(--second-color);
+  color: var(--bg-container);
+  transition: 0.1s;
+}
+.option-section {
+  background: var(--bg-container);
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.option {
+  padding: 2.5px 5px;
+  border: 2px solid var(--second-color);
+  border-radius: 50px;
+  color: var(--second-color);
+}
+.option:active {
+  background: var(--second-color);
+  color: var(--bg-container);
+  transition: 0.1s;
+}
+.option-active {
+  background: var(--second-color);
+  color: var(--bg-container);
+  border: 2px solid var(--second-color);
+}
+.text-pilih {
+  color: var(--second-color);
+  background: var(--bg-container);
+}
+article p i,
+article p span {
+  font-size: 1.35rem;
+  background: var(--bg-container);
+}
+article {
+  color: var(--text-color);
+  background: var(--bg-container);
+}
+article h3 {
+  background: var(--bg-container);
+}
+article p {
+  background: var(--bg-container);
+}
+.formula {
+  background: var(--bg-container);
+  font-size: 1.5rem;
+}
+
+/* footer */
+.footer {
+  margin-top: 20px;
+}
+
+.footer a i {
+  color: var(--text-color);
+  font-size: 3rem;
+}
+.footer a i:hover {
+  color: var(--second-color);
+  font-size: 3rem;
+  transition: 0.2s;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1060px) {
+  .option-section {
+    justify-content: start;
+  }
+  .container {
+    padding: 2rem 2rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 2rem 2rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .container {
+    padding: 2rem 1rem;
+  }
+  .title-project {
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+}

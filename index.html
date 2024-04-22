@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project Calculator temperature</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <main>
+      <section class="content container">
+        <button onclick="darkmode()" class="dark-mode">Dark Mode</button>
+        <button onclick="lightmode()" class="dark-mode">Light Mode</button>
+        <header class="navbar">
+          <h1 class="logo"><span>Danar</span> Mukti Wibowo</h1>
+          <span class="title-project">RevoU Mini Coding Project</span>
+        </header>
+        <main class="container main-content">
+          <p class="guide-text">
+            Silahkan pilih terlebih dahulu opsi yang ada di bawah ini. lalu
+            Masukkan suhu derajat ke kotak dibawah, lalu klik tombol Konversi
+            untuk mendapatkan hasil konversi dalam bentuk yang sesuai anda pilih
+            pada opsi dibawah.
+          </p>
+          <span class="text-pilih">Pilihan Kalkulasi:</span>
+          <div class="option-section" id="option">
+            <span class="option" onclick="pilihan('ctof')"
+              >&deg;C to &deg;F</span
+            >
+            <span onclick="pilihan('Ctok')" class="option"
+              >&deg;C to &deg;K</span
+            >
+            <span onclick="pilihan('Ctor')" class="option"
+              >&deg;C to &deg;R</span
+            >
+            <span onclick="pilihan('Ktof')" class="option"
+              >&deg;K to &deg;F</span
+            >
+            <span onclick="pilihan('Ktoc')" class="option"
+              >&deg;K to &deg;C</span
+            >
+            <span onclick="pilihan('Ktor')" class="option"
+              >&deg;K to &deg;R</span
+            >
+            <span onclick="pilihan('Ftok')" class="option"
+              >&deg;F to &deg;K</span
+            >
+            <span onclick="pilihan('Ftoc')" class="option"
+              >&deg;F to &deg;C</span
+            >
+            <span onclick="pilihan('Ftor')" class="option"
+              >&deg;F to &deg;R</span
+            >
+            <span onclick="pilihan('Rtoc')" class="option"
+              >&deg;R to &deg;C</span
+            >
+            <span onclick="pilihan('Rtof')" class="option"
+              >&deg;R to &deg;F</span
+            >
+            <span onclick="pilihan('Rtok')" class="option"
+              >&deg;R to &deg;K</span
+            >
+          </div>
+          <div class="input-temperature">
+            <span id="input-name"></span> <br />
+            <textarea
+              name="celsius"
+              id="temperature1"
+              cols="30"
+              rows="10"
+              class="textarea"
+            ></textarea>
+            <button class="btn konversi-btn" onclick="calculate()">
+              Konversi
+            </button>
+            <button class="btn reset-btn" onclick="resetBtn()">Reset</button>
+            <button class="btn reverse-btn" onclick="reverse()">Reverse</button>
+          </div>
+          <div class="input-temperature">
+            <span id="output-name"></span> <br />
+            <textarea
+              name="celsius"
+              id="temperature2"
+              cols="30"
+              rows="10"
+              class="textarea"
+            ></textarea>
+          </div>
+          <div class="input-temperature">
+            <span>Cara Kalkulasi:</span> <br />
+            <textarea
+              name="celsius"
+              id="cara-kalkulasi"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <article class="description" id="desc">
+            <!-- akan muncul ketika klik opsi -->
+          </article>
+        </main>
+        <footer class="navbar footer">
+          <h1 class="logo">©Danar<span>Code</span></h1>
+          <span class="title-project"
+            ><a href="https://github.com/Danarmukti"
+              ><i class="bx bxl-github"></i></a
+          ></span>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
