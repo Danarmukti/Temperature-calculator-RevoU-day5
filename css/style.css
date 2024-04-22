@@ -181,6 +181,28 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 1100px) {
+  .option-section {
+    justify-content: start;
+  }
+  .container {
+    padding: 2rem 2rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .option-section {
+    justify-content: start;
+  }
+  .container {
+    padding: 2rem 2rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+}
 @media (max-width: 900px) {
   .option-section {
     justify-content: start;
