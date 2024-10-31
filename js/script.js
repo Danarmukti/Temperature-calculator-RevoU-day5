@@ -209,59 +209,63 @@ function resetBtn() {
 function calculate() {
   number = parseFloat(temperatureInput.value);
 
-  switch (opsi) {
-    case "ctof":
-      result = number * 1.8 + 32;
-      formula.value = "(" + number + "°C x 9/5) + 32 = " + result;
-      break;
-    case "ctok":
-      result = number + 273.15;
-      formula.value = number + "°C +  273.15 = " + result;
-      break;
-    case "ctor":
-      result = number * (4 / 5);
-      formula.value = number + "°C * 4/5 = " + result;
-      break;
-    case "ftoc":
-      result = ((number - 32) * 5) / 9;
-      formula.value = "(" + number + "°F - 32) * 5/9 = " + result;
-      break;
-    case "ftor":
-      result = (number - 32) * (4 / 9);
-      formula.value = "(" + number + "°F - 32) * (4/9) = " + result;
-      break;
-    case "ftok":
-      result = (number + 459.67) * (5 / 9);
-      formula.value = "(" + number + "°F + 459.67) * (5 / 9) = " + result;
-      break;
-    case "ktoc":
-      result = number - 273.15;
-      formula.value = number + "°K - 273.15 = " + result;
-      break;
-    case "ktor":
-      result = (number - 273.15) * (4 / 5);
-      formula.value = "(" + number + "°K - 273.15) *(4/5)= " + result;
-      break;
-    case "ktof":
-      result = number * 1.8 - 459.67;
-      formula.value = "(" + number + "°K * 9/5) - 459.67 = " + result;
-      break;
-    case "rtoc":
-      result = 1.25 * number;
-      formula.value = number + "°R * 5/4 = " + result;
-      break;
-    case "rtok":
-      result = number * (5 / 4) + 273.15;
-      formula.value = "(" + number + "°R * 5 / 4) + 273.15 = " + result;
-      break;
-    case "rtof":
-      result = number * (9 / 4) + 32;
-      formula.value = "(" + number + "°R * 9 / 4) + 32= " + result;
-      break;
-    default:
-      alert("Pilih Opsi terlebih dahulu");
-      result = "";
-      break;
+  if (opsi=false) {
+    alert("Masukan Angka nya!");
+  } else {
+    switch (opsi) {
+      case "ctof":
+        result = number * 1.8 + 32;
+        formula.value = "(" + number + "°C x 9/5) + 32 = " + result;
+        break;
+      case "ctok":
+        result = number + 273.15;
+        formula.value = number + "°C +  273.15 = " + result;
+        break;
+      case "ctor":
+        result = number * (4 / 5);
+        formula.value = number + "°C * 4/5 = " + result;
+        break;
+      case "ftoc":
+        result = ((number - 32) * 5) / 9;
+        formula.value = "(" + number + "°F - 32) * 5/9 = " + result;
+        break;
+      case "ftor":
+        result = (number - 32) * (4 / 9);
+        formula.value = "(" + number + "°F - 32) * (4/9) = " + result;
+        break;
+      case "ftok":
+        result = (number + 459.67) * (5 / 9);
+        formula.value = "(" + number + "°F + 459.67) * (5 / 9) = " + result;
+        break;
+      case "ktoc":
+        result = number - 273.15;
+        formula.value = number + "°K - 273.15 = " + result;
+        break;
+      case "ktor":
+        result = (number - 273.15) * (4 / 5);
+        formula.value = "(" + number + "°K - 273.15) *(4/5)= " + result;
+        break;
+      case "ktof":
+        result = number * 1.8 - 459.67;
+        formula.value = "(" + number + "°K * 9/5) - 459.67 = " + result;
+        break;
+      case "rtoc":
+        result = 1.25 * number;
+        formula.value = number + "°R * 5/4 = " + result;
+        break;
+      case "rtok":
+        result = number * (5 / 4) + 273.15;
+        formula.value = "(" + number + "°R * 5 / 4) + 273.15 = " + result;
+        break;
+      case "rtof":
+        result = number * (9 / 4) + 32;
+        formula.value = "(" + number + "°R * 9 / 4) + 32= " + result;
+        break;
+      default:
+        alert("Pilih Opsi terlebih dahulu");
+        result = "";
+        break;
+    }
   }
   temperatureOutput.value = result;
 }
