@@ -209,64 +209,99 @@ function resetBtn() {
 function calculate() {
   number = parseFloat(temperatureInput.value);
 
-  if (opsi=false) {
-    alert("Masukan Angka nya!");
-  } else {
     switch (opsi) {
       case "ctof":
-        result = number * 1.8 + 32;
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
+          result = number * 1.8 + 32;
         formula.value = "(" + number + "°C x 9/5) + 32 = " + result;
+        }
+       
         break;
       case "ctok":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number + 273.15;
-        formula.value = number + "°C +  273.15 = " + result;
+        formula.value = number + "°C +  273.15 = " + result; }
         break;
       case "ctor":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number * (4 / 5);
-        formula.value = number + "°C * 4/5 = " + result;
+        formula.value = number + "°C * 4/5 = " + result;}
         break;
       case "ftoc":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = ((number - 32) * 5) / 9;
-        formula.value = "(" + number + "°F - 32) * 5/9 = " + result;
+        formula.value = "(" + number + "°F - 32) * 5/9 = " + result;}
         break;
       case "ftor":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = (number - 32) * (4 / 9);
-        formula.value = "(" + number + "°F - 32) * (4/9) = " + result;
+        formula.value = "(" + number + "°F - 32) * (4/9) = " + result;}
         break;
       case "ftok":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = (number + 459.67) * (5 / 9);
-        formula.value = "(" + number + "°F + 459.67) * (5 / 9) = " + result;
+        formula.value = "(" + number + "°F + 459.67) * (5 / 9) = " + result;}
         break;
       case "ktoc":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number - 273.15;
-        formula.value = number + "°K - 273.15 = " + result;
+        formula.value = number + "°K - 273.15 = " + result; }
         break;
       case "ktor":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = (number - 273.15) * (4 / 5);
-        formula.value = "(" + number + "°K - 273.15) *(4/5)= " + result;
+        formula.value = "(" + number + "°K - 273.15) *(4/5)= " + result;}
         break;
       case "ktof":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number * 1.8 - 459.67;
-        formula.value = "(" + number + "°K * 9/5) - 459.67 = " + result;
+        formula.value = "(" + number + "°K * 9/5) - 459.67 = " + result;}
         break;
       case "rtoc":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = 1.25 * number;
-        formula.value = number + "°R * 5/4 = " + result;
+        formula.value = number + "°R * 5/4 = " + result;}
         break;
       case "rtok":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number * (5 / 4) + 273.15;
-        formula.value = "(" + number + "°R * 5 / 4) + 273.15 = " + result;
+        formula.value = "(" + number + "°R * 5 / 4) + 273.15 = " + result;}
         break;
       case "rtof":
+        if (temperatureInput = null) {
+          alert("Masukan angkanya!");
+        } else {
         result = number * (9 / 4) + 32;
-        formula.value = "(" + number + "°R * 9 / 4) + 32= " + result;
+        formula.value = "(" + number + "°R * 9 / 4) + 32= " + result;}
         break;
       default:
         alert("Pilih Opsi terlebih dahulu");
         result = "";
         break;
     }
-  }
+  
   temperatureOutput.value = result;
 }
 // PILIHAN BUTTON
