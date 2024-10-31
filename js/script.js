@@ -209,9 +209,6 @@ function resetBtn() {
 function calculate() {
   number = parseFloat(temperatureInput.value);
 
-    if (temperatureInput=="") {
-      alert("masukan angkanya!");
-    } else {
       switch (opsi) {
         case "ctof":
             result = number * 1.8 + 32;
@@ -266,7 +263,7 @@ function calculate() {
           result = "";
           break;
       }
-    }
+    
   
   temperatureOutput.value = result;
 }
